@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="row">
+
+    <div class="col-md-3">
+        <h2>Estudiantes</h2>
+        <ul>
+            <li><a asp-area="" asp-controller="estudiante" asp-action="Crear">Crear</a></li>
+            <li><a asp-area="" asp-controller="estudiante" asp-action="List">Lista</a></li>
+        </ul>
+    </div>
+
+    <div class="col-md-3">
+        <h2>Indicador</h2>
+        <ul>
+            <li><a asp-area="" asp-controller="Indicador" asp-action="Crear">Crear</a></li>
+            <li><a asp-area="" asp-controller="Indicador" asp-action="List">Lista</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-3">
+        <h2>Periodo</h2>
+        <ul>
+            <li><a asp-area="" asp-controller="Periodo" asp-action="Crear">Crear</a></li>
+            <li><a asp-area="" asp-controller="Periodo" asp-action="List">Lista</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Seccion</h2>
+        <ul>
+            <li><a asp-area="" asp-controller="Seccion" asp-action="Crear">Crear</a></li>
+            <li><a asp-area="" asp-controller="Seccion" asp-action="List">Lista</a></li>
+        </ul>
+    </div>
+
+    <div class="col-md-3">
+        <h2>Materia</h2>
+        <ul>
+            <li><a asp-area="" asp-controller="Materia" asp-action="Crear">Crear</a></li>
+            <li><a asp-area="" asp-controller="Materia" asp-action="List">Lista</a></li>
+        </ul>
+    </div>
+
+</div>

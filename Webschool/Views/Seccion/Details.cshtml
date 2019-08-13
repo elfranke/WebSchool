@@ -1,0 +1,36 @@
+﻿@model Webschool.Models.Secciones
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Secciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdSeccion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdSeccion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Seccion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Seccion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Grado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Grado)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

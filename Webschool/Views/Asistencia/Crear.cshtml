@@ -1,0 +1,59 @@
+﻿@model Webschool.Models.Asistencias
+
+@{
+    ViewData["Title"] = "Crear";
+}
+
+<h2>Crear</h2>
+
+<h4>Asistencias</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Crear">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group hidden">
+                <label asp-for="IdAsistencia" class="control-label"></label>
+                <input asp-for="IdAsistencia" class="form-control" value="@Model.IdAsistencia" />
+                <span asp-validation-for="IdAsistencia" class="text-danger"></span>
+            </div>
+            <div class="form-group ">
+                <label asp-for="Asistencia" class="control-label"></label>
+                <input asp-for="Asistencia" class="form-control" value="@Model.Asistencia" />
+                <span asp-validation-for="Asistencia" class="text-danger"></span>
+            </div>
+            <div class="form-group hidden">
+                <label asp-for="IdEstudiante" class="control-label"></label>
+                <input asp-for="IdEstudiante" class="form-control"  value="@Model.IdEstudiante" />
+                <span asp-validation-for="IdEstudiante" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estudiante" class="control-label"></label>
+                <input asp-for="Estudiante" class="form-control" value="@Model.Estudiante"  />
+                <span asp-validation-for="Estudiante" class="text-danger"></span>
+            </div>
+            <div class="form-group hidden">
+                <label asp-for="IdMateria" class="control-label"></label>
+                <input asp-for="IdMateria" class="form-control" value="@Model.IdMateria" />
+                <span asp-validation-for="IdMateria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Materia" class="control-label"></label>
+                <input asp-for="Materia" class="form-control" value="@Model.Materia" />
+                <span asp-validation-for="Materia" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
